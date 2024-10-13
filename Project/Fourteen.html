@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.hero {
+    background-image: url('');
+    background-color: rgb(89, 163, 138);
+    background-blend-mode: hue;
+    margin-top: 20px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+.content {
+    max-width: 500px;
+}
+.content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:rgb(4, 76, 117);
+}
+.content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 61, 75);
+    
+}
+.learn-more {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color:rgb(4, 76, 117) ;
+    color: rgb(89, 163, 138);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+    
+}
+.card {
+    background-color: rgb(218, 221, 205);
+    width: 200px;
+    height:400px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h3{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: rgb(4, 76, 117);
+    
+  } 
+    
+  .button-seemore {
+    color: rgb(35, 122, 101) ;
+    height:auto;
+    width: 100%;
+    margin-left: 3px;
+  }</style>
+<body>
+    <section class="hero">
+        <div class="content">
+          
+            <h1>KACHIN STATE</h1>
+            <p>
+              Kachin State, in northern Myanmar, is known for its stunning natural beauty 
+              and cultural diversity. It features Southeast Asia's highest peak, Hkakabo Razi. 
+               The state celebrates its rich traditions through the vibrant Manau Festival.
+               Visitors can enjoy scenic boat trips 
+               along the Ayeyarwady River and explore the jade mining town of Hpakant. Myitkyina, 
+               the capital, serves as the gateway to this hidden gem full of adventure and cultural depth.
+               Kachin State is a hidden gem waiting to be explored.
+  
+            </p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+  
+        <div class="card-container">
+            <div class="card">
+                <img src="images/k6.jpeg" alt="Places"> <!-- Replace with actual image -->
+                <h3>Places</h3>
+                <a href="#" class="button-seemore">see more</a>
+            </div>
+            <div class="card">
+                <img src="images/k4.jpeg" alt="Events"> <!-- Replace with actual image -->
+                <h3>Events</h3>
+                <a href="#" class="button-seemore">see more</a>
+            </div>
+            <div class="card">
+                <img src="images/k5.jpeg" alt="Food"> <!-- Replace with actual image -->
+                <h3>Food</h3>
+                <a href="#" class="button-seemore">see more</a>
+            </div>
+        </div>
+        
+  
+        
+    </section>
+</body>
+</html>

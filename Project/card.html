@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet"> <!-- Material Symbols Outlined -->
+    <style>
+         place{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+      }
+      place h1  {
+         margin-top: 3vw;
+          text-align: center;
+          color:#D27C2C ;
+      }
+      place h2  {
+        
+          text-align: center;
+          color:#D27C2C ;
+      }
+      .container {
+          display: flex;
+          justify-content: center;
+          width: 80%;
+          overflow: hidden; /* Hide overflowing cards */
+          position: relative; /* For arrow positioning */
+      }
+      .cards-wrapper {
+          display: flex;
+          transition: transform 0.5s ease; /* Smooth transition */
+      }
+      .card {
+          position: relative;
+          width:260px; /* Width of the cards */
+          height: 400px; /* Height of the cards */
+          margin: 20px;
+          text-decoration: none;
+          color: black;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: transform 0.6s ease;
+          /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+      }
+      .card:hover{
+          transform: translateY(-20px);
+      }
+      .card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .caption {
+          position: absolute;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          width: 100%;
+          text-align: center;
+          padding: 5px 0;
+          height: auto;
+      }
+      .arrow {
+          font-size: 30px;
+          cursor: pointer;
+          position: absolute;
+          top: 50%; /* Center vertically */
+          transform: translateY(-50%); /* Adjust for exact centering */
+          background-color: white; /* White background for visibility */
+          border: 2px solid black; /* Border color */
+          border-radius: 50%; /* Round button */
+          padding: 5px;
+          z-index: 1; /* Ensure arrows are above cards */
+          box-shadow: 0 4px 10px white;
+          display: none; /* Hide arrows initially */
+      }
+      .left-arrow {
+          left: 1px; /* Position closer to the first card */
+      }
+      .right-arrow {
+          right: 1px; /* Position closer to the fourth card */
+      }
+      .arrow.visible {
+          display: block; /* Show arrows when needed */
+      }
+    </style>
+</head>
+<body>
+    <place><!--here is the stater for section card-->
+        <h1>Some Attractive Places</h1>
+        <h2>In Burma</h2>
+        <div class="container" id="cardContainer">
+            <div class="cards-wrapper" id="cardsWrapper">
+                <a href="link1.html" class="card">
+                    <img src="#" alt="Image 1">
+                    <div class="caption">Kalaw<br>Shan State</div>
+                </a>
+                <a href="link2.html" class="card">
+                    <img src="#" alt="Image 2">
+                    <div class="caption">Image 2</div>
+                </a>
+                <a href="link3.html" class="card">
+                    <img src="#" alt="Image 3">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="link4.html" class="card">
+                    <img src="#" alt="Image 4">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                
+                <a href="link5.html" class="card hidden">
+                    <img src="#" alt="Image 5">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="link6.html" class="card hidden">
+                    <img src="#" alt="Image 6">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="link7.html" class="card hidden">
+                    <img src="#" alt="Image 7">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="link8.html" class="card hidden">
+                    <img src="#" alt="Image 8">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="link7.html" class="card hidden">
+                  <img src="#" alt="Image 9">
+                  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+              </a>
+              <a href="link8.html" class="card hidden">
+                  <img src="#" alt="Image 10">
+                  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+              </a>
+  
+              <a href="link7.html" class="card hidden">
+                <img src="#" alt="Image 11">
+                <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+            </a>
+            <a href="link8.html" class="card hidden">
+                <img src="#" alt="Image 12">
+                <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+            </a>
+            <a href="link7.html" class="card hidden">
+              <img src="#" alt="Image 13">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="link8.html" class="card hidden">
+              <img src="#" alt="Image 14">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+                
+          <a href="link8.html" class="card hidden">
+            <img src="#" alt="Image 15">
+            <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+        </a>
+  
+        <a href="link7.html" class="card hidden">
+          <img src="#" alt="Image 16">
+          <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+      </a>
+      <a href="link8.html" class="card hidden">
+          <img src="#" alt="Image 17">
+          <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+      </a>
+      <a href="link7.html" class="card hidden">
+        <img src="#" alt="Image 18">
+        <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+    </a>
+    <a href="link8.html" class="card hidden">
+        <img src="#" alt="Image 19">
+        <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+    </a>
+  
+    <a href="link8.html" class="card hidden">
+      <img src="#" alt="Image 20">
+      <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+  <a href="link7.html" class="card hidden">
+    <img src="#" alt="Image 21">
+    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+  <a href="link8.html" class="card hidden">
+    <img src="#" alt="Image 22">
+    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+  <a href="link8.html" class="card hidden">
+    <img src="#" alt="Image 23">
+    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+  <a href="link8.html" class="card hidden">
+    <img src="#" alt="Image 24">
+    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+            </div>
+            <!-- Arrows for showing more cards -->
+            <div class="arrow left-arrow" id="showMoreLeft">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+            </div>
+            <div class="arrow right-arrow" id="showMoreRight">
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </div>
+        </div>
+    
+        <script>
+            const cardsWrapper = document.getElementById('cardsWrapper');
+            const showMoreLeft = document.getElementById('showMoreLeft');
+            const showMoreRight = document.getElementById('showMoreRight');
+            const totalCards = document.querySelectorAll('.card').length;
+            const visibleCards = 4; // Number of cards to show at once
+            let currentIndex = 0;
+    
+            function updateCardPosition() {
+                const offset = currentIndex * (130 + 20); // Card width + margin
+                cardsWrapper.style.transform = `translateX($-{offset}px)`;
+    
+                // Show or hide arrows based on the current index
+                showMoreLeft.classList.toggle('visible', currentIndex > 0);
+                showMoreRight.classList.toggle('visible', currentIndex < totalCards - visibleCards);
+            }
+    
+            showMoreRight.addEventListener('click', () => {
+                currentIndex++;
+                if (currentIndex >= totalCards - visibleCards + 1) {
+                    currentIndex = totalCards - visibleCards; // Stop at the last visible card
+                }
+                updateCardPosition();
+            });
+    
+            showMoreLeft.addEventListener('click', () => {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = 0; // Stay at the start
+                }
+                updateCardPosition();
+            });
+    
+            // Initialize visibility on page load
+            updateCardPosition();
+        </script>
+      </place><!--here is the end for section card//
+</body>
+</html>  
