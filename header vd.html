@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino's Home Page</title>
+    <!--pinenav-->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sevillana&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="/images/pjlogo.jpg"
+      type="image.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    
+
+
+    <style>
+    /*pine start*/
+    header {  
+      
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      width: 100%;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+        height: 600px; /* Set height to match the header */
+    }
+
+    .carousel-item {
+        height: 600px; /* Set height to match the header */
+    }
+
+    .carousel-item img {
+        object-fit: cover; /* Ensure images cover the area */
+        height: 100%; /* Full height */
+        width: 100%; /* Full width */
+    }
+
+    .navbar {
+        position: absolute; /* Keep the navbar on top of the carousel */
+        width: 100%;
+        z-index: 1; /* Ensure the navbar is above the carousel */
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("chat-2.webp");
+      background-size: cover;
+      background-position: center;
+      filter: blur(3px); /* Apply blur to background */
+      z-index: -1; /* Make sure it's behind content */
+    }
+    .logo {
+      border-radius: 50%;
+      margin-top:5px ;
+      margin-left: 30px;
+    }
+   
+    ul {
+      list-style-type: none;
+      margin-left: 200px;
+    }
+    li {
+      display: inline-block;
+      list-style-type: none;
+      background-color: #161D6f;
+      color: #fff;
+      padding: 5px 15px 5px 15px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-right: 30px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      color: whitesmoke;
+    }
+    .search-container {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin: 10px;
+      padding: 0;
+      margin-right: 0px;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 150px;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 10px;
+      margin: 0;
+    }
+    .search-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .search-btn:hover .search-icon {
+      color: #007bff;
+    }
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+    
+    
+    .dropdown-item:hover {
+      color: rgb(36, 15, 226);
+
+    }
+    @media (max-width: 768px) {
+      pre {
+        font-size: 25px;
+        text-align: center;
+      }
+      ul {
+        margin-left: 50px;
+      }
+    }
+    /*pine end*/
+
+    /*Video Background Start*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+       
+        
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)) ;
+        position: relative;
+        padding: 0 5%;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+    }
+        .section-content{
+          text-align: center;
+          color: transparent;
+          font-size: 90px;
+          color:rgb(36, 15, 226);
+          font-weight: 600;
+          transition: 0.5s;
+        }
+        .section-content h1{
+            font-family:monospace;
+            font-size: 60px;
+            color:rgb(36, 15, 226);
+            font-weight: 600;
+            transition: 0.5s;
+        }
+        .section-content h1:hover{
+            -webkit-text-stroke: 2px rgb(36, 15, 226);
+            color: transparent ;
+        }
+        .content{
+            text-align: center;
+            color: transparent ;
+        }
+        .content h1{
+            font-size: 90px;
+            color:#f3823c;
+            font-weight: 600;
+            transition: 0.5s;
+        }
+        .content h1:hover{
+            -webkit-text-stroke: 2px #f3823c;
+            color: transparent ;
+        }
+        .content a{
+            text-decoration: none;
+            display: inline-block;
+            color:#f3823c;
+            font-size: 24px;
+            border: 2px solid #f3823c;
+            padding: 14px 70px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        .back-video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;  
+        }
+        @media (min-aspect-ratio:16/9){
+            .back-video{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio:16/9){
+            .back-video{
+                width: auto;
+                height: 100%;
+            }
+        }
+    /*Video Background End*/
+    </style>
+</head>
+<body>
+    <header>
+    <!--Navigation Bar Start-->
+    <!--Logo-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="/images/logo.jpg" class="logo" alt="Destino" width="100px" height="100px">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 1px;"></i>Where to go</a>
+                </li>
+          
+    <script>
+          function showMore() {
+            const moreRegions = document.getElementById('moreRegions');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+        
+            // Toggle the visibility of the hidden regions
+            if (moreRegions.style.display === 'none') {
+              moreRegions.style.display = 'block';  // Show the hidden regions
+              showMoreBtn.textContent = 'Show Less...';  // Change button text
+            } else {moreRegions.style.display = 'none';  // Hide the regions again
+          showMoreBtn.textContent = 'Show More...';  // Reset button text
+        }
+      }
+    </script>
+    <!--Events & Festival-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events & Festival</a>
+          </li>
+          <!--About Us-->
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html/aboutus.html">About Us</a>
+          </li>
+    <!--Search box-->
+        <form class="d-flex">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass" style="padding-left: 5px;"></i>
+            <input 
+              type="text"
+              placeholder="Search..."
+              class="search-input"
+            />
+            <button class="search-btn" type="submit">
+            </button>
+          </div>
+        </form>
+        </ul>
+        </div>
+        </div>
+        </nav>
+      <!--Navigation Bar End-->
+  
+      <!--Video Background Start-->
+      <div class="hero">
+  
+          <video autoplay loop muted plays-inline class="back-video">
+              <source src="/images/video_2024-10-07_12-09-45.mp4" type="video/webm">
+          </video>
+  
+          
+          <div class="content">
+              <h1>Burma's Treasure</h1>
+              <a href="#">Explore</a>
+          </div>
+      </div>
+        <!--Video Background End-->
+      </header>
+      <section>
+          
+      </section>
+  </body>
+  </html>
